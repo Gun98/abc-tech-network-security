@@ -32,7 +32,7 @@ OPNsense 기반 본사-지사 네트워크 보안 구축 및 장애 대응 실�
 
 ## 2. Network Topology
 
-![Network Topology](01_topology.png)
+![Network Topology](images/01_topology.png)
 
 ### IP 구성
 
