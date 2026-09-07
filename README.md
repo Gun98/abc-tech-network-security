@@ -118,7 +118,7 @@ HQ와 Branch의 WAN에서는 IKE 및 IPsec 협상을 위해 필요한 트래픽�
 
 ### VPN 상태 확인
 
-![IPsec VPN Status](images/04_ipsec_vpn_status.png)
+![IPsec VPN Status](images/04_ipsec_vpn_ping.png)
 
 Phase 1 연결 상태와 Phase 2의 `INSTALLED` 상태를 확인했으며, 실제 통신 후 Bytes In / Out 값이 증가하는 것도 확인했습니다.
 
@@ -126,7 +126,7 @@ Phase 1 연결 상태와 Phase 2의 `INSTALLED` 상태를 확인했으며, 실�
 
 HQ의 `10.10.10.1`을 Source로 지정하여 Branch의 `10.20.10.1`까지 Ping 테스트를 진행했습니다.
 
-![IPsec VPN Ping](images/05_ipsec_vpn_ping.png)
+![IPsec VPN Ping](images/05_ipsec_status_vpn.png)
 
 패킷 손실률 `0.0%`를 확인하여 두 내부 네트워크 간 IPsec VPN 통신이 정상적으로 동작하는 것을 검증했습니다.
 
@@ -154,7 +154,7 @@ Firewall Policy에서 허용된 트래픽이라도 IPS에서 별도로 검사하
 
 처음에는 Alert 방식으로 탐지 여부를 확인한 후 Action을 Drop으로 변경했습니다.
 
-![IPS Block Test](images/06_ips_block_test.png)
+![IPS Block Test](images/06_ips_dns_block_test.png)
 
 Suricata Alert에서 `blocked` 상태를 확인했으며 Windows에서:
 
